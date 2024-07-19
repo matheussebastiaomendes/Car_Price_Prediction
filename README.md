@@ -10,7 +10,7 @@ Neste projeto será feito uma análise exploratoria dos dados e a elaboração d
 
 A empresa Toad Motors , especializada na venda de veículos, está buscando entender melhor o mercado de carros que comercializa. A empresa possui um vasto conjunto de dados sobre diferentes marcas e modelos de carros, incluindo informações como preço, potência, consumo urbano, comprimento, largura e tipo de carroceria. O objetivo é usar esses dados para otimizar suas estratégias de precificação e melhorar a oferta de produtos.
 
-COLOCAR IMAGEM AQUI
+![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/carros.png)
 
 ### Objetivos e resultados
 O primeiro objetivo é responder as seguintes perguntas sobre o dataset:
