@@ -63,3 +63,20 @@ A colunas do dataset estão organizadas da seguinte forma:
 
 ## Bibliotecas utilizadas
 
+#### Manipulação de dados
+- Pandas, Numpy.
+#### EDA
+- Seaborn, Matplotlib.
+#### Machine Learning
+- XGBoost, sklearn.
+
+# Análsie exploratória de dados 
+
+## Qual é a quantidade de carros por marca?
+
+## Quais as marcas que possuem a maior media de preço de carros?
+
+## Como o preço se comporta em relação a potencia, consumo urbano, comprimento e largura do carro?
+
+## O tipo de carroceria influencia no preço do veiculo?
+
