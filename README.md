@@ -74,9 +74,37 @@ A colunas do dataset estão organizadas da seguinte forma:
 
 ## Qual é a quantidade de carros por marca?
 
+![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/qtd_por_marca_top_10.png)
+
+A marca que lidera com o maior número de carros é a Toyota
 ## Quais as marcas que possuem a maior media de preço de carros?
+
+![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/media_preco_marca_top_10.png).
 
 ## Como o preço se comporta em relação a potencia, consumo urbano, comprimento e largura do carro?
 
+![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/comportamento.png)
+
 ## O tipo de carroceria influencia no preço do veiculo?
+
+![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/comportamento_carroceria.png)
+
+# Modelo de Previsão
+## Pré-processamento dos dados
+As colunas númericas e categóricas foram separadas e tratadas, as colunas numéricas receberam um imputer de mediana da coluna analisada nos valores faltantes, além disso tambem foi feito standar scaler para a padronizacao dos dados para ter média zero e variância unitária. Já nas colunas categóricas utilizamos o OneHotEncoder para sua transformação.
+## Feature selection
+Após o tratamento das colunas utilizamos o SelectKBest para a selecao das features que tem maior impacto no modelo, para este modelo selecionamos 10.
+## Métricas
+As métricas do modelo 
+
+|Métrica|Resultado|
+|------------------|-------------|
+|RMSE|3378.7426|
+|R² Score|0.8352|
+|MAE|2221.6420|
+|MSE|11415901.6063|
+|MAPE|0.1566|
+
+![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/comportamento_modelo.png)
+
 
