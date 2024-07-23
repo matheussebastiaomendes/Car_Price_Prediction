@@ -93,12 +93,15 @@ Analisando o gráfico podemos chegar a conclusão que o preço diminui conforme 
 ![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/comportamento_carroceria.png)
 
 No dataset encontramos 5 tipos de carroceria, conversivel, hatchback, sedan, wagon (hatckback alongado) e hardtop.
-Podemos analisar que os carros conversiveis estão em um patamar de preço mais elevado que as 
+Podemos analisar que os carros conversiveis estão em um patamar de preço mais elevado que as carrocerias mais encontradas no dataset.
+
 # Modelo de Previsão
 ## Pré-processamento dos dados
 As colunas númericas e categóricas foram separadas e tratadas, as colunas numéricas receberam um imputer de mediana da coluna analisada nos valores faltantes, além disso tambem foi feito standar scaler para a padronizacao dos dados para ter média zero e variância unitária. Já nas colunas categóricas utilizamos o OneHotEncoder para sua transformação.
 ## Feature selection
 Após o tratamento das colunas utilizamos o SelectKBest para a selecao das features que tem maior impacto no modelo, para este modelo selecionamos 10.
+
+## LGBMODEL
 ## Métricas
 As métricas do modelo 
 
@@ -111,5 +114,11 @@ As métricas do modelo
 |MAPE|0.1566|
 
 ![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/comportamento_modelo.png)
+
+As previsões ficam com um erro muito maior conforme aumentamos o valor dos carros, testaremos outro modelo para analisar se os valores se adequam melhor a reta.
+
+## RANDOM FOREST 
+
+
 
 
