@@ -113,11 +113,25 @@ As métricas do modelo
 |MSE|11415901.6063|
 |MAPE|0.1566|
 
-![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/comportamento_modelo.png)
+![](https://github.com/matheussebastiaomendes/modelo_predicao/blob/main/imagens/comportamento_modelo_LGBMODEL.png)
 
 As previsões ficam com um erro muito maior conforme aumentamos o valor dos carros, testaremos outro modelo para analisar se os valores se adequam melhor a reta.
 
 ## RANDOM FOREST 
+
+As métricas do modelo 
+
+|Métrica|Resultado|
+|------------------|-------------|
+|RMSE|2180.4615|
+|R² Score|0.9314|
+|MAE|1480.7826|
+|MSE|4754412.1706|
+|MAPE|0.1097|
+
+![](https://github.com/matheussebastiaomendes/modelo_predicao/blob/main/imagens/comportamento_modelo_RANDOM_FOREST.png)
+
+Neste segundo modelo podemos ver uma melhora nas métricas com erros menores comparada a antiga, no grafico vemos que os valores da previsão estão muito mais ajustados a reta, ficando bem proximos dos valores reais sendo assim esse é o modelo escolhido para realizar as previsões dos preços dos carros.
 
 
 
