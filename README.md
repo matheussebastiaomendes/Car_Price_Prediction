@@ -68,7 +68,7 @@ A colunas do dataset estão organizadas da seguinte forma:
 #### EDA
 - Seaborn, Matplotlib.
 #### Machine Learning
-- XGBoost, sklearn.
+- LGBMODEL, Random Forest, sklearn.
 
 # Análsie exploratória de dados 
 
