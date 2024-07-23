@@ -76,19 +76,24 @@ A colunas do dataset estão organizadas da seguinte forma:
 
 ![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/qtd_por_marca_top_10.png)
 
-A marca que lidera com o maior número de carros é a Toyota
+A marca que lidera com certa disparidade quando comparada a segunda colocada é a Toyota com 32 veiculos, seguida da Nissan com 18 e a Mazda com 17, as demais marcas ficaram ente 13 e 9 veiculos.
 ## Quais as marcas que possuem a maior media de preço de carros?
 
 ![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/media_preco_marca_top_10.png).
 
+O top 3 das marcas que possuem maior média de preço dos veículos são Jaguar, Buick e Porsche, ficando na média de R$ 31.000 á R$ 34.600, outra marca que possuem uma média de valor consideravel quando comparada as outras é a BMW que fica em torno de R$ 26.100, as demais marcar ficam numa faixa de preço entre R$ 15.000 Á 18.000 .
 ## Como o preço se comporta em relação a potencia, consumo urbano, comprimento e largura do carro?
 
 ![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/comportamento.png)
+
+Analisando o gráfico podemos chegar a conclusão que o preço diminui conforme um maior consumo urbano e aumenta se potência, largura do carro e comprimento aumentam.
 
 ## O tipo de carroceria influencia no preço do veiculo?
 
 ![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/comportamento_carroceria.png)
 
+No dataset encontramos 5 tipos de carroceria, conversivel, hatchback, sedan, wagon (hatckback alongado) e hardtop.
+Podemos analisar que os carros conversiveis estão em um patamar de preço mais elevado que as 
 # Modelo de Previsão
 ## Pré-processamento dos dados
 As colunas númericas e categóricas foram separadas e tratadas, as colunas numéricas receberam um imputer de mediana da coluna analisada nos valores faltantes, além disso tambem foi feito standar scaler para a padronizacao dos dados para ter média zero e variância unitária. Já nas colunas categóricas utilizamos o OneHotEncoder para sua transformação.
