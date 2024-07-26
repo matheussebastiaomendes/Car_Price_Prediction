@@ -2,7 +2,7 @@
 # Modelo Preditivo para preços de veículos 🚗
 
 
-Neste projeto será feito uma análise exploratoria dos dados e a elaboração de um modelo preditivo feito com LGBMODEL, os dados podem ser encontrados no [Kaggle](https://www.kaggle.com/datasets/hellbuoy/car-price-prediction/data) e foram disponibilizados por [Manish Kumar](https://www.kaggle.com/hellbuoy).
+Neste projeto será feito uma análise exploratoria dos dados e a elaboração de um modelo preditivo feito com LGBMODEL e RANDOM FOREST, os dados podem ser encontrados no [Kaggle](https://www.kaggle.com/datasets/hellbuoy/car-price-prediction/data) e foram disponibilizados por [Manish Kumar](https://www.kaggle.com/hellbuoy).
 
 
 ### Problema de negócio
@@ -76,12 +76,14 @@ A colunas do dataset estão organizadas da seguinte forma:
 
 ![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/qtd_por_marca_top_10.png)
 
-A marca que lidera com certa disparidade quando comparada a segunda colocada é a Toyota com 32 veiculos, seguida da Nissan com 18 e a Mazda com 17, as demais marcas ficaram ente 13 e 9 veiculos.
-## Quais as marcas que possuem a maior media de preço de carros?
+A marca que lidera com certa vantagem quando comparada a segunda colocada é a Toyota com 32 veiculos, seguida da Nissan com 18 e a Mazda com 17, as demais marcas ficaram ente 13 e 9 veiculos.
+
+## Quais as marcas que possuem a maior média de preço de carros?
 
 ![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/media_preco_marca_top_10.png).
 
-O top 3 das marcas que possuem maior média de preço dos veículos são Jaguar, Buick e Porsche, ficando na média de R$ 31.000 á R$ 34.600, outra marca que possuem uma média de valor consideravel quando comparada as outras é a BMW que fica em torno de R$ 26.100, as demais marcar ficam numa faixa de preço entre R$ 15.000 Á 18.000 .
+O top 3 das marcas que possuem maior média de preço dos veículos são Jaguar, Buick e Porsche, ficando na média de R$ 31.000 á R$ 34.600, outra marca que possui uma média de valor consideravel quando comparada as outras é a BMW que fica em torno de R$ 26.100, as demais marcas ficam em uma faixa de preço entre R$ 15.000 á 18.000 .
+
 ## Como o preço se comporta em relação a potencia, consumo urbano, comprimento e largura do carro?
 
 ![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/comportamento.png)
@@ -93,9 +95,10 @@ Analisando o gráfico podemos chegar a conclusão que o preço diminui conforme 
 ![](https://github.com/matheussebastiaomendes/ml_lgbmodel/blob/main/imagens/comportamento_carroceria.png)
 
 No dataset encontramos 5 tipos de carroceria, conversivel, hatchback, sedan, wagon (hatckback alongado) e hardtop.
-Podemos analisar que os carros conversiveis estão em um patamar de preço mais elevado que as carrocerias mais encontradas no dataset.
+Podemos analisar que os carros conversiveis estão em um patamar de preço mais elevado que as carrocerias mais encontradas no dataset, que possuem uma faixa de preços mais acessíveis devido à maior disponibilidade e variação de modelos, a carroceria hardtop possui um intervalo de preco maior
 
-# Modelo de Previsão
+# Modelo de Prediçao
+
 ## Pré-processamento dos dados
 As colunas númericas e categóricas foram separadas e tratadas, as colunas numéricas receberam um imputer de mediana da coluna analisada nos valores faltantes, além disso tambem foi feito standar scaler para a padronizacao dos dados para ter média zero e variância unitária. Já nas colunas categóricas utilizamos o OneHotEncoder para sua transformação.
 ## Feature selection
@@ -119,6 +122,8 @@ As previsões ficam com um erro muito maior conforme aumentamos o valor dos carr
 
 ## RANDOM FOREST 
 
+Para este modelo mantivemos o tratamento das colunas numericas e categoricas e incluimos alguns parametros do modelo Random Forest
+
 As métricas do modelo 
 
 |Métrica|Resultado|
@@ -133,6 +138,10 @@ As métricas do modelo
 
 Neste segundo modelo podemos ver uma melhora nas métricas com erros menores comparada a antiga, no grafico vemos que os valores da previsão estão muito mais ajustados a reta, ficando bem proximos dos valores reais sendo assim esse é o modelo escolhido para realizar as previsões dos preços dos carros.
 
+
+# Conclusoes
+
+Ao analisar o dataset, respondemos aos questionamentos sobre preços de veículos e construímos um modelo preditivo de alta precisão. Identificamos que os carros conversíveis têm preços mais elevados devido ao seu luxo e engenharia sofisticada, as marcas com mais carro e as que possuem maior media de preco. Utilizando técnicas de aprendizado de máquina, nosso modelo previu com precisão os valores dos carros com base em suas características.
 
 
 
