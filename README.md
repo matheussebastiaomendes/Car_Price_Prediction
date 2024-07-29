@@ -32,8 +32,6 @@ A colunas do dataset estão organizadas da seguinte forma:
 
 | Coluna                       | Descrição                                                       |
 |------------------------------|-----------------------------------------------------------------|
-| ID_do_carro                  | Identificador único do carro                                    |
-| simbolização                 | Código ou símbolo que representa o carro                        |
 | nome_do_Carro                | Nome completo do carro                                         |
 | marca                        | Nome da marca do carro                                         |
 | tipo_de_combustível           | Tipo de combustível usado pelo carro                            |
@@ -63,12 +61,13 @@ A colunas do dataset estão organizadas da seguinte forma:
 
 ## Bibliotecas utilizadas
 
-#### Manipulação de dados
+#### EDA (Análise Exploratória de Dados)
 - Pandas, Numpy.
-#### EDA
+#### Visualizações Gráficas
 - Seaborn, Matplotlib.
 #### Machine Learning
-- LGBMODEL, Random Forest, sklearn.
+- sklearn (scikit-learn)
+- lightgbm
 
 # Análsie exploratória de dados 
 
@@ -118,7 +117,7 @@ As métricas do modelo
 
 ![](https://github.com/matheussebastiaomendes/modelo_predicao/blob/main/imagens/comportamento_modelo_LGBMODEL.png)
 
-As previsões ficam com um erro muito maior conforme aumentamos o valor dos carros, testaremos outro modelo para analisar se os valores se adequam melhor a reta.
+As previsões ficam com um erro maior conforme aumentamos o valor dos carros, testaremos outro modelo para analisar se os valores se adequam melhor a reta.
 
 ## RANDOM FOREST 
 
