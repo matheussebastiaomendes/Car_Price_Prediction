@@ -134,4 +134,4 @@ Neste segundo modelo, podemos ver uma melhora nas métricas com erros menores co
 
 # Conclusões
 
-Ao analisar o dataset, respondemos aos questionamentos sobre preços de veículos e construímos um modelo preditivo de alta precisão. Identificamos que os carros conversíveis têm preços mais elevados devido ao seu luxo e engenharia sofisticada, as marcas com mais carros e as que possuem maior média de preço. Utilizando técnicas de aprendizado de máquina, nosso modelo previu com precisão os valores dos carros com base em suas características.
+Ao analisar o dataset, respondemos aos questionamentos sobre preços de veículos e construímos um modelo preditivo de alta precisão. Identificamos alguns pontos como carros conversíveis têm preços mais elevados devido ao seu luxo e engenharia sofisticada, as marcas que possuem mais carros nos registros e as que possuem maior média de preço. Utilizando técnicas de aprendizado de máquina, nosso modelo previu com precisão os valores dos carros com base em suas características.
